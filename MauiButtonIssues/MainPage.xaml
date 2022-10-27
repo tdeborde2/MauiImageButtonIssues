@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiButtonIssues.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Button
+                Text="Click Me"
+                FontSize="16"
+                Padding="48, 16"
+                CornerRadius="24"
+                TextColor="{StaticResource White}"
+                Background="{StaticResource Primary}">
+                <Button.Shadow>
+                    <Shadow Brush="#000000" Offset="0, 20" Radius="5" Opacity=".5"/> 
+                </Button.Shadow>
+            </Button>
+
+            <Label Text="ImageButton with Padding = 16"
+                   HorizontalTextAlignment="Center"/>
+            <ImageButton
+                Source="dotnet_bot.png"
+                WidthRequest="64"
+                HeightRequest="64"
+                CornerRadius="32"
+                Padding="16"
+                Background="{StaticResource Primary}">
+                <ImageButton.Shadow>
+                    <Shadow Brush="#000000" Offset="0, 20" Radius="5" Opacity=".5"/> 
+                </ImageButton.Shadow>
+            </ImageButton>
+
+            <Label Text="ImageButton with Padding = 0"
+                   HorizontalTextAlignment="Center"/>
+            <ImageButton
+                Source="dotnet_bot.png"
+                WidthRequest="64"
+                HeightRequest="64"
+                CornerRadius="32"
+                Background="{StaticResource Primary}">
+                <ImageButton.Shadow>
+                    <Shadow Brush="#000000" Offset="0, 20" Radius="5" Opacity=".5"/> 
+                </ImageButton.Shadow>
+            </ImageButton>
+
+            <Label Text="ImageButton with shadow cut off on Android"
+                   HorizontalTextAlignment="Center"/>
+            <ImageButton
+                Source="dotnet_bot.png"
+                WidthRequest="64"
+                HeightRequest="64"
+                CornerRadius="32"
+                Background="{StaticResource Primary}">
+                <ImageButton.Shadow>
+                    <Shadow Brush="#000000" Offset="0, 20" Radius="5" Opacity=".5"/> 
+                </ImageButton.Shadow>
+            </ImageButton>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
+
